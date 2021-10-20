@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Seleccion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+<body class="body">
+
+    <nav class="navbar fixed-top navbar-light bg-light sombra navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HomePage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#primeros-pasos">Primeros pasos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Footer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="spacing"></div>
+
+    <div class="titulos">
+        <h1>Página similar a:</h1>
+    </div>
+
+    <div class="ajuste-carousel">
+        <div id="carouselExampleControls" style="width: 90%;" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/page-landing.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/page2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/page3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/page4.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="primeros-pasos" style="height: 50px;"></div>
+
+    <div class="contenedor-txt">
+        <div class="contenido-paso sombra">
+            <div class="titulos">
+                <h3 style="font-weight: bold;">Pasos para el desarrollo de la pagina</h3>
+            </div>
+            <p class="title-txt">Recursos multimedia</p>
+            <p>- Crear una carpeta donde contenga todas las <strong>imagenes</strong>  que se van a utilizar dentro de la pagina.</p>
+            <p>- Identificar la gama de colores y tipo de font que se implementara en la pagina.</p>
+            <p class="title-txt" style="margin-top: 40px;">Lenguajes y consumo de API's</p>
+            <p>- Acordar tecnologias que se utilizaran en el codigo para una correcta maquetación, en este caso se haria
+                uso
+                <strong>HTML, CSS y JS</strong> para la maquetación con ayuda del framekor <strong>Bootstrap</strong>.</p>
+            <p>- Para utilizar el buscador de direcciones sera necesario consumir la api de <strong>Google Maps</strong>, para lograr con
+                exito el uso de este recurso es necesario que se cree una cuenta en <a href="https://console.cloud.google.com/" target="_blank">Google Cloud Platform</a>.</p>
+            <p>- Estando en la consola de Google Cloud se deben habilitar las siguientes API's: <strong>Maps JavaScript
+                    Api</strong> y <strong>Places API</strong>.</p>
+            <p>- Despues de habilitar las API´s se debe generar una <strong>Key</strong> la cual sera utilizada en el documento html para
+                el
+                consumo de dicho servicio.</p>
+            <div class="mb-3">
+                <input type="text" class="form-control"
+                    value='<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcmbetrvTuD5DLEt9bNAB_6tufr4Faz_s&libraries=places&callback=activarBuscador" />'
+                    aria-describedby="helpId" placeholder="Aqui" disabled>
+            </div>
+            <p class="title-txt" style="margin-top: 40px;">Diseño de la interfaz y logica del negocio</p>
+            <p>- Cuando se haga la carga del script sera momento de iniciar con el codigo de la interfaz, principalmente
+                se
+                usara <strong>flex-box, grid y bootstrap</strong> para un correcto posicionamiento de los elementos, ademas de ser
+                <strong>responsive</strong>.
+            </p>
+            <p>- A la hora de realizar el <strong>nav-bar o cabecera</strong> de la pagina sera necesario dejar el <strong>background-img =
+                url('image_url')</strong> para poder poner elementos encima del fondo.</p>
+            <p>- En dicho proceso se agregara un <strong>input</strong>, este sera el encargado de consumir el servicio de <strong>autocomplete</strong>,
+                su
+                id estara conectada a un metodo llamado <strong>activarBuscador</strong> que comenzara a ejecutarse
+                cuando
+                el usuario decida realizar una busqueda.</p>
+            <div class="container" style="margin: 20px 0 50px 0;">
+                <div class="row">
+                    <!-- Autocomplete location search input -->
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label>Buscar dirección:</label>
+                            <input type="text" class="form-control" id="search_input" placeholder="Busca aquí" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>- Para que nuestro <strong>nav-bar</strong> siga el sroll sera necesario cambiar un atributo de su clase a position <strong>fixed</strong>,
+                de esta
+                manera la cabecera estara fija en la parte superior de la pagina.</p>
+            <p>- En cuanto a las tarjetas de los pasos a seguir para el proceso de venta sera necesario el uso de
+                <strong>Flex-box</strong>, esto
+                se debe a que acomoda cada tarjeta de forma horizontal sin sobrepasar el <strong>width predeterminado</strong> como se
+                muestra en
+                el ejemplo:</p>
+            <div class="tarjetas-ejemplo">
+                <div class="temas-tarjeta sombra">
+                    <p>contenido</p>
+                </div>
+                <div class="temas-tarjeta sombra">
+                    <p>contenido</p>
+                </div>
+                <div class="temas-tarjeta sombra">
+                    <p>contenido</p>
+                </div>
+            </div>
+            <p>- Para las tablas de ventas se utilizaran los <strong>componentes</strong> que ofrece Bootstrap logrando que los elementos
+                den a
+                conocer la idea principal.</p>
+            <p>- El resto del home page se estructura de una manera <strong>muy similar</strong> a los elementos expuestos anteriormente.
+            </p>
+            <p>- Para la creación del <strong>footer</strong> sera de gran ayuda utilizar algunos de los elementos que ofrece Bootstrap
+                5.0.</p>
+        </div>
+    </div>
+    </div>
+
+
+    <footer id="footer">
+        <p style="color: aliceblue;">Michael Parra | Bogotá D.C</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function activarBuscador() {
+            var input = document.getElementById('search_input');
+            var autocomplete = new google.maps.places.Autocomplete(input);
+        }
+    </script>
+    <!-- Google Maps JavaScript library -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcmbetrvTuD5DLEt9bNAB_6tufr4Faz_s&libraries=places&callback=activarBuscador">
+    </script>
+</body>
+
+</html>

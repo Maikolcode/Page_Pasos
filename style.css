@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.contenedor-txt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.contenido-paso p{
+    font-size: 18px;
+}
+.contenido-paso{
+    width: 98%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+.titulos{
+    width: 100%;
+    margin: 10px 0 20px 0;
+    text-align: center;
+}
+.ajuste-carousel{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.body{
+    background-color: rgba(0,0,0,0.1);
+}
+.sombra{
+    box-shadow: 2px 3px 3px 2px rgba(0,0,0,0.09);
+}
+.spacing{
+    margin-top: 100px;
+}
+.tarjetas-ejemplo{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+.temas-tarjeta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 300px;
+    border-radius: 20px;
+    background-color: bisque;
+}
+.title-txt{
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    background-color: black;
+    height: 200px;
+}
